@@ -244,8 +244,8 @@ img {
 .home__img {
   position: absolute;
   right: 0;
-  bottom: 0;
-  width: 350px;
+  bottom: -35px;
+  width: 250px;
 }
 
 /* Button */
