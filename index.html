@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Jquery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+    <!-- Box Icons -->
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+
+    <title>My Portofolio | Taufik Ramadhan</title>
+  </head>
+  <body>
+    <!-- Header -->
+
+    <header class="l-header">
+      <nav class="nav bd-grid">
+        <div>
+          <a href="#" class="nav__logo">Taufik</a>
+        </div>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+            <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+            <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+            <li class="nav__item"><a href="#work" class="nav__link">Works</a></li>
+            <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="l-main">
+      <section class="home bd-grid" id="home">
+        <div class="home__data">
+          <h1 class="home__title">
+            Hi, <br />
+            I'm <span class="home__title-color">Taufik,</span> <br />
+            Front-End <br />
+            Developer
+          </h1>
+          <a href="#contact" class="button">Contact</a>
+        </div>
+
+        <div class="home__social">
+          <a href="#" class="home__social-icon"><i class="bx bxl-linkedin"></i></a>
+          <a href="#" class="home__social-icon"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="home__social-icon"><i class="bx bxl-instagram"></i></a>
+        </div>
+
+        <div class="home__img">
+          <img src="img/foto.png" />
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="about section" id="about">
+        <h2 class="section-title">About</h2>
+
+        <div class="about__container bd-grid">
+          <div class="about__img">
+            <img src="img/profil.png" />
+          </div>
+
+          <div>
+            <h2 class="about__subtitle">I'm Taufik</h2>
+            <p class="about__text">I am a student majoring in business management at PPM School of Management and a freelance Front-End Developer. I have an interest in economics and information technology (IT).</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section class="skills section" id="skills">
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skills__container bd-grid">
+          <div>
+            <h2 class="skills__subtitle">Profesional Skills</h2>
+            <p class="skills__text">I am proficient in mark-up languages such as HTML5 and CSS3, JavaScript programming language, and the CSS Framework, Bootstrap v5.</p>
+
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxl-html5 skills__icon"></i>
+                <span class="skills__name">HTML5</span>
+              </div>
+              <div>
+                <span class="skills__percentage">90%</span>
+              </div>
+              <div class="skills__bar skills__html"></div>
+            </div>
+
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxl-css3 skills__icon"></i>
+                <span class="skills__name">CSS3</span>
+              </div>
+              <div>
+                <span class="skills__percentage">90%</span>
+              </div>
+              <div class="skills__bar skills__css"></div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxl-javascript skills__icon"></i>
+                <span class="skills__name">JavaScript</span>
+              </div>
+              <div>
+                <span class="skills__percentage">80%</span>
+              </div>
+              <div class="skills__bar skills__javascript"></div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxl-bootstrap skills__icon"></i>
+                <span class="skills__name">Bootstrap v5</span>
+              </div>
+              <div>
+                <span class="skills__percentage">75%</span>
+              </div>
+              <div class="skills__bar skills__bootstrap"></div>
+            </div>
+          </div>
+          <div>
+            <img src="img/work3.jpg" class="skills__img" />
+          </div>
+        </div>
+      </section>
+
+      <!-- WORK -->
+      <section class="work section" id="work">
+        <h2 class="section-title">Works</h2>
+
+        <div class="work__container bd-grid">
+          <div class="work__img" id="proyek1">
+            <img src="img/proyek1.png" />
+          </div>
+          <div class="work__img" id="proyek2">
+            <img src="img/proyek2.png" />
+          </div>
+          <div class="work__img" id="proyek3">
+            <img src="img/proyek3.png" />
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="contact section" id="contact">
+        <h2 class="section-title">Contact</h2>
+
+        <div class="contact__container bd-grid">
+          <form action="" class="contact__form">
+            <input type="text" placeholder="Name" class="contact__input" id="name" name="name" />
+            <input type="mail" placeholder="Email" class="contact__input" id="email" name="email" />
+            <textarea name="message" id="message" cols="" rows="10" class="contact__input"></textarea>
+
+            <input type="button" value="Send" class="contact__button button send" />
+          </form>
+          <div class="text-info"></div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p class="footer__title">Taufik</p>
+      <div class="footer__social">
+        <a href="#" class="footer__icon"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="footer__icon"><i class="bx bxl-instagram"></i></a>
+      </div>
+      <p>&#169; 2021 copyright all right reserved</p>
+    </footer>
+
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Main JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
